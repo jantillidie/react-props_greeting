@@ -1,5 +1,9 @@
 import "./styles.css";
 
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Greeting name="John" isCoach={false} />;
+}
+
+function Greeting({ name, isCoach }) {
+  return <h1>Hello, {isCoach ? name : "there"}!</h1>;
 }
